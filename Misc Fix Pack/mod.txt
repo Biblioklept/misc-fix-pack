@@ -26,6 +26,11 @@
 		{
 			"hook_id": "lib/units/weapons/newnpcraycastweaponbase",
 			"script_path": "lua/akimbo_freeze_fix.lua"
+		},
+		{
+			"hook_id": "lib/managers/menu/crimenetcontractgui", 
+			"script_path" : "lua/7D66A433BE3A1FE2_fix.lua"
 		}
+
 	]
 }
