@@ -1,0 +1,2 @@
+function NewNPCRaycastWeaponBase:_on_auto_fire_stop()
+end
