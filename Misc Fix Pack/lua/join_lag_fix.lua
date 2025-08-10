@@ -1,25 +1,28 @@
 local debug = false
 
 if RequiredScript:match("networkpeer$") then
+
     local _send = NetworkPeer.send
     NetworkPeer._cached = NetworkPeer._cached or {}
 
     function NetworkPeer:send(func_name, ...)
-        if func_name == "sync_outfit" and Utils:IsInHeist() and self:loaded() then
-            local uid = self:user_id()
+        --skibidi tiktok
 
-            if NetworkPeer._cached[uid] then
-                if debug then
-                    managers.mission._fading_debug_output:script().log("blocked to "..self:name(), Color.red)
-                end
-                return
-            end
+        -- if func_name == "sync_outfit" and Utils:IsInHeist() and self:loaded() then
+        --     local uid = self:user_id()
 
-            NetworkPeer._cached[uid] = true
-            if debug then
-                managers.mission._fading_debug_output:script().log("sent to "..self:name(), Color.green)
-            end
-        end
+        --     if NetworkPeer._cached[uid] then
+        --         if debug then
+        --             managers.mission._fading_debug_output:script().log("blocked to "..self:name(), Color.red)
+        --         end
+        --         return
+        --     end
+
+        --     NetworkPeer._cached[uid] = true
+        --     if debug then
+        --         managers.mission._fading_debug_output:script().log("sent to "..self:name(), Color.green)
+        --     end
+        -- end
 
         return _send(self, func_name, ...)
     end

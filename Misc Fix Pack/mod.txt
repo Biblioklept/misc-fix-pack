@@ -3,7 +3,7 @@
 	"description": "Prevents akimbo weapons causing freezes, fixes join lag, and fixes autofire sounds",
 	"author": "Biblioklept",
 	"contact": "https://github.com/biblioklept",
-	"version": "1",
+	"version": "2",
 	"blt_version" : 2,
 	"color" : "50 50 50",
 	"hooks": [
